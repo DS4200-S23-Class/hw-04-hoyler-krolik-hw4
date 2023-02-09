@@ -3,12 +3,84 @@
 
 <head>
     <meta charset=utf-8/>
+    <title>hw-04</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
+    <h3>hw-04: Event Handling</h3>
+
+    <div class="events">
+
+        <div>
+        
+            <svg id="chart" height="500" width="500">
+                <line x1="100" y1="100" x2="100" y2="400"/>
+                <line x1="100" y1="400" x2="400" y2="400"/>
+                <circle class="circle" id="pt1" cx="125" cy="375" r="8"></circle>
+                <circle class="circle" id="pt2" cx="150" cy="300" r="8"></circle>
+                <circle class="circle" id="pt3" cx="250" cy="350" r="8"></circle>
+                <circle class="circle" id="pt4" cx="325" cy="175" r="8"></circle>
+                <!-- <text x="100" y="100">(100,100)</text>
+                <circle id="max" cx="400" cy="400" r="10"></circle>
+                <text x="400" y="400">(400,400)</text> -->
+            </svg>
+        
+    
+        </div>
 
 
+        <div>
+
+            <form >  
+                <label> Select X coordinate </label>  
+                <select id="x-cord">  
+                <option value = "1"> 1 </option>  
+                <option value = "2"> 2 </option>  
+                <option value = "3"> 3 </option> 
+                <option value = "4"> 4 </option>
+                <option value = "5"> 5 </option>
+                <option value = "6"> 6 </option>
+                <option value = "7"> 7 </option>
+                <option value = "8"> 8 </option>
+                <option value = "9"> 9 </option>
+                </select>   
+            </form>
+            <br>
+            <form>  
+                <label> Select Y coordinate </label>  
+                <select id="y-cord">  
+                <option value = "1"> 1 </option>  
+                <option value = "2"> 2 </option>  
+                <option value = "3"> 3 </option> 
+                <option value = "4"> 4 </option>
+                <option value = "5"> 5 </option>
+                <option value = "6"> 6 </option>
+                <option value = "7"> 7 </option>
+                <option value = "8"> 8 </option>
+                <option value = "9"> 9 </option>
+                </select>   
+            </form> 
+
+            <button type="button" id="addPt">Add Point</button>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+    <div>
+        <h5>Acknowledgments</h5>
+
+    </div>
+
+<script src="main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+}
+
+h3 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+.events {
+
+    display: flex;
+}
+
+
+line {
+
+    stroke: black;
+    stroke-width: 3;
+
+}
+
+circle {
+    fill: blue;
+}
+
+circle:hover {
+
+    fill: green;
+}
+
+.red {
+
+    stroke: red;
+    stroke-width: 2;
+}
