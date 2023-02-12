@@ -13,13 +13,32 @@ h5 {
 .events {
 
     display: flex;
+    justify-content: center;
+    height: 75vh;
+
+}
+
+
+#scatter {
+
+    width: 60%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+#selection {
+
+    width: 40%;
+    align-self: center;
 }
 
 
 line {
 
     stroke: black;
-    stroke-width: 3;
+    stroke-width: 4;
+    justify-content: center;
 
 }
 
@@ -35,5 +54,5 @@ circle:hover {
 .red {
 
     stroke: red;
-    stroke-width: 2;
+    stroke-width: 3;
 }

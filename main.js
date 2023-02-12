@@ -26,19 +26,19 @@ for (i=0; i < pt_list.length; i++) {
 
 function PtAdd() {
     
-    let x_cord = (document.getElementById("x-cord").value) * 25 + 100;
-    let y_cord = 400 - ((document.getElementById("y-cord").value) * 25);
+    let x_cord = (document.getElementById("x-cord").value) * 50 + 100;
+    let y_cord = 800 - ((document.getElementById("y-cord").value) * 50);
 
 
     let svg = document.getElementById('chart');
 
-    circle = document.createElement('circle');
+    let circle = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
     
     circle.addEventListener("click", PtClick);
 
     circle.setAttribute('cx', x_cord);
     circle.setAttribute('cy', y_cord);
-    circle.setAttribute('r', 8);
+    circle.setAttribute('r', 10);
 
     svg.append(circle);
 }

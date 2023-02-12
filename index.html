@@ -13,15 +13,15 @@
 
     <div class="events">
 
-        <div>
+        <div id="scatter">
         
-            <svg id="chart" height="500" width="500">
-                <line x1="100" y1="100" x2="100" y2="400"/>
-                <line x1="100" y1="400" x2="400" y2="400"/>
-                <circle cx="125" cy="375" r="8"></circle>
-                <circle cx="150" cy="300" r="8"></circle>
-                <circle cx="250" cy="350" r="8"></circle>
-                <circle cx="325" cy="175" r="8"></circle>
+            <svg id="chart" height="1000" width="1000">
+                <line x1="100" y1="100" x2="100" y2="800"/>
+                <line x1="100" y1="800" x2="900" y2="800"/>
+                <circle cx="150" cy="700" r="10"></circle>
+                <circle cx="200" cy="600" r="10"></circle>
+                <circle cx="400" cy="700" r="10"></circle>
+                <circle cx="550" cy="350" r="10"></circle>
                 
             </svg>
         
@@ -29,8 +29,8 @@
         </div>
 
 
-        <div>
-
+        <div id="selection">
+            <h4>Select Coordinates to Plot:</h4>
             <form >  
                 <label> Select X coordinate </label>  
                 <select id="x-cord">  
@@ -60,7 +60,7 @@
                 <option value = "9"> 9 </option>
                 </select>   
             </form> 
-
+            <br>
             <button type="button" id="addPt">Add Point</button>
 
 
@@ -75,6 +75,15 @@
 
     <div>
         <h5>Acknowledgments</h5>
+        <div>
+            <ul>
+                <li><a href="https://www.w3schools.com/graphics/svg_intro.asp">Resource 1</a></li>
+                <li><a href="https://learn-the-web.algonquindesign.ca/topics/advanced-svg/">Resource 2</a></li>
+
+
+            </ul>
+
+        </div>
 
     </div>
 
