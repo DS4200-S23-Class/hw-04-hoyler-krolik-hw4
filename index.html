@@ -1,94 +1,97 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
+
+<!-- Create head -->
 <head>
     <meta charset=utf-8/>
+    <!-- Add title -->
     <title>hw-04</title>
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-
+<!-- Website Body -->
 <body>
-    <h3>hw-04: Event Handling</h3>
 
-    <div class="events">
+<!-- Header for HW-04 -->
+<h3>hw-04: Event Handling</h3>
 
-        <div id="scatter">
-        
-            <svg id="chart" height="1000" width="1000">
-                <line x1="100" y1="100" x2="100" y2="800"/>
-                <line x1="100" y1="800" x2="900" y2="800"/>
-                <circle cx="150" cy="700" r="10"></circle>
-                <circle cx="200" cy="600" r="10"></circle>
-                <circle cx="400" cy="700" r="10"></circle>
-                <circle cx="550" cy="350" r="10"></circle>
-                
-            </svg>
-        
-    
-        </div>
-
-
-        <div id="selection">
-            <h4>Select Coordinates to Plot:</h4>
-            <form >  
-                <label> Select X coordinate </label>  
-                <select id="x-cord">  
-                <option value = "1"> 1 </option>  
-                <option value = "2"> 2 </option>  
-                <option value = "3"> 3 </option> 
-                <option value = "4"> 4 </option>
-                <option value = "5"> 5 </option>
-                <option value = "6"> 6 </option>
-                <option value = "7"> 7 </option>
-                <option value = "8"> 8 </option>
-                <option value = "9"> 9 </option>
-                <option value = "10"> 10 </option>
-                </select>   
-            </form>
-            <br>
-            <form>  
-                <label> Select Y coordinate </label>  
-                <select id="y-cord">  
-                <option value = "1"> 1 </option>  
-                <option value = "2"> 2 </option>  
-                <option value = "3"> 3 </option> 
-                <option value = "4"> 4 </option>
-                <option value = "5"> 5 </option>
-                <option value = "6"> 6 </option>
-                <option value = "7"> 7 </option>
-                <option value = "8"> 8 </option>
-                <option value = "9"> 9 </option>
-                <option value = "10"> 10 </option>
-                </select>   
-            </form> 
-            <br>
-            <button type="button" id="addPt">Add Point</button>
-
-
-
-        </div>
-
-
-
-
+<!-- create and label div for scatter plot -->
+<div class="events">
+    <div id="scatter">
+        <!-- Create chart axes -->
+        <svg id="chart" height="1000" width="1000">
+            <line x1="100" y1="100" x2="100" y2="800"/>
+            <line x1="100" y1="800" x2="900" y2="800"/>
+            <circle cx="150" cy="700" r="10"></circle>
+            <circle cx="200" cy="600" r="10"></circle>
+            <circle cx="400" cy="700" r="10"></circle>
+            <circle cx="550" cy="350" r="10"></circle>
+        </svg>
     </div>
 
 
+    <!-- Create div for adding points to scatter plot -->
+    <div id="selection">
+        <!-- Header -->
+        <h4>Select Coordinates to Plot:</h4>
+        <!-- Create form for point selection -->
+        <form>
+            <!-- Create selection options for x-coordinate -->
+            <label> Select X coordinate </label>
+            <select id="x-cord">
+                <option value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5</option>
+                <option value="6"> 6</option>
+                <option value="7"> 7</option>
+                <option value="8"> 8</option>
+                <option value="9"> 9</option>
+                <option value="10"> 10</option>
+            </select>
+        </form>
+        <!-- Break in page between forms -->
+        <br>
+        <!-- Create form for point selection -->
+        <form>
+            <!-- Create selection options for y-coordinate -->
+            <label> Select Y coordinate </label>
+            <select id="y-cord">
+                <option value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5</option>
+                <option value="6"> 6</option>
+                <option value="7"> 7</option>
+                <option value="8"> 8</option>
+                <option value="9"> 9</option>
+                <option value="10"> 10</option>
+            </select>
+        </form>
+        <!-- Break in page between forms and button-->
+        <br>
+        <!-- Create button for point selection -->
+        <button type="button" id="addPt">Add Point</button>
+    </div>
+</div>
+
+
+<div>
+    <!-- Acknowledgements -->
+    <h5>Acknowledgments</h5>
     <div>
-        <h5>Acknowledgments</h5>
-        <div>
-            <ul>
-                <li><a href="https://www.w3schools.com/graphics/svg_intro.asp">Resource 1</a></li>
-                <li><a href="https://learn-the-web.algonquindesign.ca/topics/advanced-svg/">Resource 2</a></li>
-
-
-            </ul>
-
-        </div>
-
+        <ul>
+            <li><a href="https://www.w3schools.com/graphics/svg_intro.asp">Resource 1</a></li>
+            <li><a href="https://learn-the-web.algonquindesign.ca/topics/advanced-svg/">Resource 2</a></li>
+        </ul>
     </div>
+</div>
 
+<!-- connect webpage to Javascript file -->
 <script src="main.js"></script>
 </body>
 

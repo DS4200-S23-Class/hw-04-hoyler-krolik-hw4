@@ -1,15 +1,19 @@
+/* change font of webpage to Ariel */
 body {
     font-family: Arial;
 }
 
+/* center header 3 */
 h3 {
     text-align: center;
 }
 
+/* center header 5 */
 h5 {
     text-align: center;
 }
 
+/* format events div */
 .events {
 
     display: flex;
@@ -18,7 +22,7 @@ h5 {
 
 }
 
-
+/* format scatter div */
 #scatter {
 
     width: 60%;
@@ -27,13 +31,14 @@ h5 {
     justify-content: center;
 }
 
+/* format selection div */
 #selection {
 
     width: 40%;
     align-self: center;
 }
 
-
+/* format line div */
 line {
 
     stroke: black;
@@ -42,15 +47,18 @@ line {
 
 }
 
+/* choose circle color */
 circle {
     fill: blue;
 }
 
+/* circle hover color */
 circle:hover {
 
     fill: green;
 }
 
+/* format red tag */
 .red {
 
     stroke: red;
